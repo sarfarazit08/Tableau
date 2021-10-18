@@ -1,0 +1,1068 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0718.1543                               -->
+<workbook original-version='18.1' source-build='2019.2.2 (20192.19.0718.1543)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Expense Data' inline='true' name='federated.0ha96l411qttwc1h7hpks1yr70u0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Export-2021-03-30-20-10-58' name='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='D:/Projects/Tableau/Expense Data Analysis/Export-2021-03-30-20-10-58.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation all='true' name='April 2020+' type='union'>
+          <columns>
+            <column datatype='date' date-parse-format='dd MMM yyyy' name='Date' />
+            <column datatype='string' name='Category type' />
+            <column datatype='string' name='Category name' />
+            <column datatype='string' name='Note' />
+            <column datatype='integer' name='Amount' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='March 2020' table='[&apos;March 2020$&apos;]' type='table'>
+            <columns gridOrigin='C2:G13:no:C2:G13:1' lost='2' outcome='9' processed='2'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='April 2020' table='[&apos;April 2020$&apos;]' type='table'>
+            <columns gridOrigin='C2:G109:no:C2:G109:1' lost='2' outcome='9' processed='98'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='May 2020' table='[&apos;May 2020$&apos;]' type='table'>
+            <columns gridOrigin='C2:G123:no:C2:G123:1' lost='2' outcome='9' processed='112'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='June 2020' table='[&apos;June 2020$&apos;]' type='table'>
+            <columns gridOrigin='C2:G113:no:C2:G113:1' lost='2' outcome='9' processed='102'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='July 2020' table='[&apos;July 2020$&apos;]' type='table'>
+            <columns gridOrigin='C2:G124:no:C2:G124:1' lost='2' outcome='9' processed='113'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='August 2020' table='[&apos;August 2020$&apos;]' type='table'>
+            <columns gridOrigin='C2:G123:no:C2:G123:1' lost='2' outcome='9' processed='112'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='September 2020' table='[&apos;September 2020$&apos;]' type='table'>
+            <columns gridOrigin='C2:G133:no:C2:G133:1' lost='2' outcome='9' processed='122'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='October 2020' table='[&apos;October 2020$&apos;]' type='table'>
+            <columns gridOrigin='C2:G153:no:C2:G153:1' lost='2' outcome='9' processed='142'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='November 2020' table='[&apos;November 2020$&apos;]' type='table'>
+            <columns gridOrigin='C2:G80:no:C2:G80:1' lost='2' outcome='9' processed='69'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='December 2020' table='[&apos;December 2020$&apos;]' type='table'>
+            <columns gridOrigin='C2:G145:no:C2:G145:1' lost='2' outcome='9' processed='136'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='January 2021' table='[&apos;January 2021$&apos;]' type='table'>
+            <columns gridOrigin='C2:G117:no:C2:G117:1' lost='2' outcome='9' processed='106'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='February 2021' table='[&apos;February 2021$&apos;]' type='table'>
+            <columns gridOrigin='C2:G115:no:C2:G115:1' lost='2' outcome='9' processed='104'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0nmubli0l8xg5912emnzo0vgcpbb' name='March 2021' table='[&apos;March 2021$&apos;]' type='table'>
+            <columns gridOrigin='C2:G125:no:C2:G125:1' lost='2' outcome='9' processed='114'>
+              <column datatype='string' name='Date' ordinal='0' />
+              <column datatype='string' name='Category type' ordinal='1' />
+              <column datatype='string' name='Category name' ordinal='2' />
+              <column datatype='string' name='Note' ordinal='3' />
+              <column datatype='integer' name='Amount' ordinal='4' />
+            </columns>
+          </relation>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[April 2020+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[April 2020+]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category type]</local-name>
+            <parent-name>[April 2020+]</parent-name>
+            <remote-alias>Category type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category name]</local-name>
+            <parent-name>[April 2020+]</parent-name>
+            <remote-alias>Category name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Note</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Note]</local-name>
+            <parent-name>[April 2020+]</parent-name>
+            <remote-alias>Note</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Amount]</local-name>
+            <parent-name>[April 2020+]</parent-name>
+            <remote-alias>Amount</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[April 2020+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[April 2020+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sub-category' datatype='string' name='[Category name]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Pocket �&quot;' value='Pocket Money' />
+        </aliases>
+      </column>
+      <column caption='Category' datatype='string' name='[Category type]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' hidden='true' name='[Sheet]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Table Name]' role='dimension' type='nominal' />
+      <column-instance column='[Category name]' derivation='None' name='[none:Category name:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='D:/Projects/Tableau/Expense Data Analysis/Expense Data.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/30/2021 02:58:37 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Expense Data' increment-value='%null%' refresh-type='create' rows-inserted='1330' timestamp-start='2021-03-30 14:58:37.838' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>April 2020+</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>335</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>April 2020+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>April 2020+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Note</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Note]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Note</remote-alias>
+              <ordinal>3</ordinal>
+              <family>April 2020+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>517</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Amount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Amount</remote-alias>
+              <ordinal>4</ordinal>
+              <family>April 2020+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>206</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' rowDisplayCount='1000' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Category name:nk]' palette='tableau20_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Medical&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Loan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bills&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Salary&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Travel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Gift&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Transfer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Charity&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Entertainment&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Pocket �&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Food&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Extra income&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Shopping&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Expense Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Expense Data' name='federated.0ha96l411qttwc1h7hpks1yr70u0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ha96l411qttwc1h7hpks1yr70u0'>
+            <column datatype='integer' name='[Amount]' role='measure' type='quantitative' />
+            <column caption='Sub-category' datatype='string' name='[Category name]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Pocket �&quot;' value='Pocket Money' />
+              </aliases>
+            </column>
+            <column-instance column='[Category name]' derivation='None' name='[none:Category name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Amount]' derivation='Sum' name='[pcto:sum:Amount:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Amount]' derivation='Sum' name='[sum:Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Category name:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Category name:nk]' member='&quot;Extra income&quot;' />
+                <groupfilter function='member' level='[none:Category name:nk]' member='&quot;Salary&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[sum:Amount:qk]' value='8' />
+            <format attr='font-weight' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[sum:Amount:qk]' value='bold' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[sum:Amount:qk]' value='bold' />
+            <format attr='text-format' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[sum:Amount:qk]' value='' />
+            <format attr='font-size' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk]' value='8' />
+            <format attr='font-weight' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk]' value='bold' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk]' value='bold' />
+            <format attr='text-format' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk]' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='subtotal' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]' value='8' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]' value='center' />
+            <format attr='vertical-align' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]' value='center' />
+            <format attr='wrap' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]' value='on' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[sum:Amount:qk]' palette='red_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0ha96l411qttwc1h7hpks1yr70u0].[sum:Amount:qk]' />
+              <color column='[federated.0ha96l411qttwc1h7hpks1yr70u0].[sum:Amount:qk]' />
+              <text column='[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]' />
+              <text column='[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{24B98E47-1C6F-4266-AF64-42C935CFAB8C}' />
+    </worksheet>
+    <worksheet name='Percentage Distibution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Expense Data' name='federated.0ha96l411qttwc1h7hpks1yr70u0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ha96l411qttwc1h7hpks1yr70u0'>
+            <column datatype='integer' name='[Amount]' role='measure' type='quantitative' />
+            <column caption='Sub-category' datatype='string' name='[Category name]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Pocket �&quot;' value='Pocket Money' />
+              </aliases>
+            </column>
+            <column-instance column='[Category name]' derivation='None' name='[none:Category name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Amount]' derivation='Sum' name='[pcto:sum:Amount:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Category name:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Category name:nk]' member='&quot;Extra income&quot;' />
+                <groupfilter function='member' level='[none:Category name:nk]' member='&quot;Salary&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Loan&quot;</bucket>
+              <bucket>&quot;Transfer&quot;</bucket>
+              <bucket>&quot;Food&quot;</bucket>
+              <bucket>&quot;Shopping&quot;</bucket>
+              <bucket>&quot;Bills&quot;</bucket>
+              <bucket>&quot;Gift&quot;</bucket>
+              <bucket>&quot;Charity&quot;</bucket>
+              <bucket>&quot;Pocket �&quot;</bucket>
+              <bucket>&quot;Medical&quot;</bucket>
+              <bucket>&quot;Travel&quot;</bucket>
+              <bucket>&quot;Entertainment&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='87' />
+            <format attr='text-format' field='[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{57BCFA03-996C-41FF-8F23-59791598649B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Expense Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ha96l411qttwc1h7hpks1yr70u0].[sum:Amount:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[attr:Category name:nk]</field>
+            <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+            <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category type:nk]</field>
+            <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[sum:Amount:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3299A69A-B0C4-467B-95A7-AFEA04601CBF}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Percentage Distibution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Entertainment&quot;</value>
+                <value>0.00056532232121345085</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Travel&quot;</value>
+                <value>0.0055724628805325872</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Medical&quot;</value>
+                <value>0.0091487995649710135</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Pocket �&quot;</value>
+                <value>0.013547545626222341</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Charity&quot;</value>
+                <value>0.014368608997508544</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Gift&quot;</value>
+                <value>0.022620968881698227</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Bills&quot;</value>
+                <value>0.04105855258641692</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Shopping&quot;</value>
+                <value>0.056429935701315992</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Food&quot;</value>
+                <value>0.12944535150261327</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Transfer&quot;</value>
+                <value>0.32500380246561295</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+                  <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[pcto:sum:Amount:qk:3]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Loan&quot;</value>
+                <value>0.38223864947189473</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ha96l411qttwc1h7hpks1yr70u0].[none:Category name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B3489EF3-0BD2-413D-9A00-8877DFA3D9CC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Expense Analysis' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAGdUlEQVR4nO3aW28cdx3G8Wd2Z9d7dNaHbOzEdk4mpbRJaA6FpifRNmmQUBVSpF70Gu4Q
+      74BXwTvhhitUKCUUKWkhrSAhJHJwmroxWe+uT+udQy+sFlSttCGHScTz/Vytxpb1G2m+mv/+
+      5CBN01SAqdzjHgB4nAgA1ggA1ggA1sJBFy//8ldqX/5H1rMAmRsYwMpfr2j5/UtZzwJkjiMQ
+      rBEArA0NoLy7qSDMZzELkLmhAew6c0phraJwtKq5d36oyt7dmnzpmPace03lPU3NnH9DY8ef
+      yWJW4KEb+CV4kOarJ7V84WNNvfmi+p01jZ94RvHmltYWbqtx9JBaFz99lHMCj8TQN0CuWNDc
+      O2cVb/Y08+M3tNXqqDI7pX5nVWkcK97YVNLbymJW4KELBv0z3Pvnfs4aFBbYAsHa0O8AxfEd
+      Ku9pavXaTY1Mjik3UtDqtX9JksozuxRWSlq9cUv1+Tn1lltSEEiSorUNJVt9pf3o0d4B8ACG
+      BjCyc0y1+TnV5udUmZlSGkW62fqNtlpd1Q/tU31+TmHtE+UrZTVf/56i7rpyYV5rC5/pzh8+
+      IgA80YYegbZaXVXnphV1VpUL8wrrVaVJKiWJ+itdJVGszt+uqzy9Uyt/uaqou6Z8pawdz35L
+      B3/6toLwnhdNQOaGBtA4ckjR2oaKEw0FhVBKU5WnJlU7OKsDP/uJ4o1NTZ15UY2jTylfKurW
+      r9/T6rUFrS8uKU0SKcjiNoD7M3QLFIR5BWFeSa+//TkIlESRgiBQUAgVKFASxcqFeaVpoqTX
+      l3K57ec+n+MIhCfa0PNJGsVKo3j7cz/SV7WkSpXG/9n/x9F/PehJsv17SfIQRwUePtagsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsBYOujj23NPKhQN/BPxfGfiUl1t3FH+x
+      mPUsQOYGBtC/c1dbi59nPQuQOb4DwBoBwNrQABqnX9bOd8+peuTb9/QHizNTqn//uQceDMjC
+      0FVP548XNXn+rNavXNf4W6fVu3lLpYN71V9algJpZGZa3YuXVT3ytPq3l9Q4/bLav/tQjTdf
+      kaJY/eW7Kk431X7vT0o2e1ncE3DP7vkIFIShwkZdW7e/UHHXpEZfOKZCc1LdP3+s6rNPqdAY
+      lfKh1j+9qs1/Lqh+8qiKM9Mqze/V+pXrPPx4Ig1f9ieJolZbShL1bn4mpanSONHW0rKiVlvJ
+      +qbi7pqCQqjCRENRu6voblv9pWVFrRXF3TVF/25lcCvA/y5I0zT95sW/v/sLdS9cehzzAJli
+      CwRrQ49AI7O7VfnOvDoXPlJp/6xyldLXb4fa8cMqNCfU/v2Hqh07rI2r15WvVSWlilodJesb
+      nP3xRBv+BsgFkqT680eV9vsq7Z9VODEm5XMafemENq7eUPXw9op08vxZ1U4c1uip46qfPKJc
+      rfpIhwce1NAAolZbuUpZaRSpON1U1GorursiJak6H1zU2JlXVD50QL3F24pX1xS1OgryeY3M
+      7dHEj15XUCxkcR/AfRkaQP357yocH1NQLGjHD15QuKOu0v5ZlfbNqHRgVkEhr9VLn2j87KuK
+      1zfU/u0H2ryxqM2FRaVxrDSOs7gP4L6wBYI1tkCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwFg662HjtlEr7ZrKeBcjcl38pmIya9fdtAAAAAElFTkSu
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Percentage Distibution' width='191'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
